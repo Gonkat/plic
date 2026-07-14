@@ -1,4 +1,4 @@
-// plic langjam entry: "chatlang"
+// plic langjam entry: "EchoScript"
 // A tiny event-driven language whose only job is running a chat room.
 
 var join_count = 0
