@@ -8,7 +8,7 @@ library only).
 ## Run it
 
 ```bash
-# start the server (defaults to examples/chat.cl on port 9000)
+# start the server (defaults to chat.cl on port 9000)
 python3 main.py chat.cl 9000
 
 # in other terminals, connect with the bundled client...
@@ -20,7 +20,7 @@ nc 127.0.0.1 9000
 
 You'll be prompted for a username, then dropped straight into the room.
 Type a line to broadcast it to everyone. Built-in commands from
-`examples/chat.cl`: `/history`, `/users`, `/quit`.
+`chat.cl`: `/history`, `/users`, `/quit`.
 
 ## What's in the box
 
@@ -29,7 +29,7 @@ Type a line to broadcast it to everyone. Built-in commands from
 | Language source (lexer/parser/interpreter) | `lexer.py`, `chatlang_ast.py`, `parser.py`, `interpreter.py` |
 | Chat runtime + built-ins         | `runtime.py`                              |
 | Chat server (add/broadcast/history/remove user) | `server.py`                     |
-| Chat program written *in* chatlang | `examples/chat.cl`                      |
+| Chat program written *in* chatlang | `chat.cl`                      |
 | Test client                      | `client.py`                               |
 
 ## Language: chatlang
@@ -124,4 +124,4 @@ on disconnect(id, username) { ... }     // fired when they leave
   clients.
 - No persistence — history resets when the server restarts.
 - No `/kick`, rooms, or auth — straightforward to add as more built-ins
-  in `runtime.py` plus a bit more logic in `examples/chat.cl`.
+  in `runtime.py` plus a bit more logic in `chat.cl`.
