@@ -9,7 +9,7 @@ library only).
 
 ```bash
 # start the server (defaults to examples/chat.cl on port 9000)
-python3 main.py examples/chat.cl 9000
+python3 main.py chat.cl 9000
 
 # in other terminals, connect with the bundled client...
 python3 client.py 127.0.0.1 9000
